@@ -11,6 +11,8 @@ const BookCard = (props) => {
     )
       .then((response) => response.json())
       .then((data) => setData(data));
+    console.log(data);
+    console.log("konyv data");
   }, []);
 
   return (
