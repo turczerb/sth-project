@@ -1,17 +1,18 @@
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import * as FaIcons from "react-icons/fa"; //hát ez a react-icons loszar
+import * as AiIcons from "react-icons/ai";
+
+const Sidi = styled.div`
+  background: #15171c;
+  height: 80px;
+`;
+
 const SideBar = () => {
   return (
-    <div>
-      <p>ez lesz a side bar</p>
-      <button>Light mode</button>
-      <button>Hírlevlé</button>
-      <ul>
-        Menu
-        <li>Students</li>
-        <li>Staff</li>
-        <li>Spells</li>
-        <li>All character</li>
-      </ul>
-    </div>
+    <>
+      <Sidi>Sid</Sidi>
+    </>
   );
 };
 

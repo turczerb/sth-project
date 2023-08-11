@@ -6,10 +6,10 @@ import SideBar from "./SideBar";
 const Home = () => {
   return (
     <div>
+      <SideBar />
       <NavBar />
       <BookCard />
       <TopNewCard />
-      <SideBar />
     </div>
   );
 };
