@@ -1,6 +1,7 @@
-import BookCard from "./BookCard";
-import NavBar from "./NavBar";
+import BookCard from "./Book/BookCard";
+import NavBar from "./Bar/NavBar";
 import TopNewCard from "./TopNewCard";
+import SideBar from "./SideBar";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <NavBar />
       <BookCard />
       <TopNewCard />
+      <SideBar />
     </div>
   );
 };
