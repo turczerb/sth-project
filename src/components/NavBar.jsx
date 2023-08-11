@@ -14,6 +14,7 @@ const NavBar = () => {
       <h1>Foregin books</h1>
       <h1>Movies</h1>
       <h1>Archive</h1>
+      <div>Daily Prophet</div>
     </Navi>
   );
 };

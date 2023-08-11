@@ -1,6 +1,5 @@
 import TopNew from "./TopNew";
 import React, { useState, useEffect } from "react";
-import Book from "./Book";
 import styled from "styled-components"; //stiluska
 
 const Hir = styled.div`
