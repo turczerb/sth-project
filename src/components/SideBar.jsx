@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { SideBarData } from "./SideBarData";
 import * as FaIcons from "react-icons/fa"; //hát ez a react-icons loszar
 import * as AiIcons from "react-icons/ai";
-
+import SubMenu from "./SubMenu";
 //ez a feketecsik fenn
 const Sidi = styled.div`
   background: #15171c;
@@ -17,7 +17,7 @@ const Sidi = styled.div`
 //ez a kis hamburger icon
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  color: white;
+  color: #946b2d;
   font-size: 2 rem;
   height: 80px;
   display: flex;
@@ -63,6 +63,9 @@ const SideBar = () => {
           <NavIcon to="#">
             <AiIcons.AiOutlineClose onClick={showSidebar} />
           </NavIcon>
+          {SideBarData.map((item, index) => {
+            return <SubMenu item={item} key={index} />;
+          })}
         </SidebarWrap>
       </SidebarNav>
     </>

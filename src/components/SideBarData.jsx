@@ -8,27 +8,27 @@ import * as GiIcons from "react-icons/gi";
 
 export const SideBarData = [
   {
-    title: "Students",
+    title: " Students",
     path: "/students",
     icon: <PiIcons.PiStudentBold />,
   },
   {
-    title: "Staff",
+    title: " Staff",
     path: "/staff",
     icon: <RxIcons.RxPerson />,
   },
   {
-    title: "Spells",
+    title: " Spells",
     path: "/spells",
     icon: <RxIcons.RxMagicWand />,
   },
   {
-    title: "All character",
+    title: " All character",
     path: "/allcharacter",
     icon: <GiIcons.GiCharacter />,
   },
   {
-    title: "Houses",
+    title: " Houses",
     path: "/houses",
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
