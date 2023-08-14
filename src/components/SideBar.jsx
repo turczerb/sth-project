@@ -41,6 +41,7 @@ const SidebarNav = styled.nav`
   z-index: 10;
 `;
 
+//ez meg egy div ami magába tartalmazza konténerként az egyes elemeket: students, staff etc
 const SidebarWrap = styled.div`
   width: 100%;
 `;

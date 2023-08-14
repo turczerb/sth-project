@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-//Students, staff etc a menu tartalmát designolja
+//Students, staff etc a menu tartalmát designolja. tehát ez maga az 1 db felirat mint pl Spell
 const SidebarLink = styled(Link)`
   display: flex;
   color: #e1e9fc;
@@ -36,7 +36,7 @@ const DropdownLink = styled(Link)`
   }
 `;
 
-//margin left adta itt h az ikon és a szöveg pl students között hely lgyen
+//margin left adta itt h az ikon és a szöveg pl students között hely lgyen dez maga ami a szoveet tartja
 const SidebarLabel = styled.span`
   margin-left: 16px;
 `;

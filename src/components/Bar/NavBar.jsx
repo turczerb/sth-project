@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"; // oldalváltás
 import styled from "styled-components"; //stiluska
+import { NavBarData } from "./NavBarData";
+import SubNavBar from "./SubNavBar";
 
 const Navi = styled.nav`
   display: grid;
@@ -10,11 +12,9 @@ const Navi = styled.nav`
 const NavBar = () => {
   return (
     <Navi>
-      <h1>Books</h1>
-      <h1>News</h1>
-      <h1>Foregin books</h1>
-      <h1>Movies</h1>
-      <h1>Houses</h1>
+      {NavBarData.map((item, index) => {
+        return <SubNavBar mokus={item} key={index} />;
+      })}
     </Navi>
   );
 };
