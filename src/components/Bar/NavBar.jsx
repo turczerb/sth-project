@@ -4,19 +4,25 @@ import { NavBarData } from "./NavBarData";
 import SubNavBar from "./SubNavBar";
 
 const Navi = styled.nav`
-  display: flex;
-  justify-content: space-evenly;
-  width: ${({ props }) => (props ? "100%" : "75%")};
-  transition: 350ms;
+  justify-content: center;
+  width: ${({ sidebar }) => (sidebar ? "100px" : "1024px")};
 `;
 
-const NavBar = (props) => {
+const Div = styled.div`
+  color: black;
+  background-color: ${({ sidebar }) => (sidebar ? "white" : "blue")};
+`;
+
+const NavBar = ({ sidebar }) => {
+  console.error({ sidebar });
   return (
-    <Navi props={props}>
-      {NavBarData.map((item, index) => {
-        return <SubNavBar mokus={item} key={index} />;
-      })}
-    </Navi>
+    <>
+      <Navi sidebar={sidebar}>
+        {NavBarData.map((item, index) => {
+          return <SubNavBar sidebar={sidebar} mokus={item} key={index} />;
+        })}
+      </Navi>
+    </>
   );
 };
 

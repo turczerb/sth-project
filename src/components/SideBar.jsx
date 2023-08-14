@@ -11,7 +11,8 @@ import NavBar from "./Bar/NavBar";
 const Sidi = styled.div`
   background: #15171c;
   height: 80px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
 `;
@@ -59,7 +60,7 @@ const SideBar = () => {
         <NavIcon to="#">
           <FaIcons.FaBars onClick={showSidebar} />
         </NavIcon>
-        <NavBar props={sidebar}></NavBar>
+        <NavBar sidebar={sidebar}></NavBar>
       </Sidi>
       <SidebarNav sidebar={sidebar}>
         <SidebarWrap>

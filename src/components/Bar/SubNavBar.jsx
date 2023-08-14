@@ -9,7 +9,7 @@ const Element = styled(Link)`
   color: #e1e9fc;
   padding: 15px 20px 10px 20px;
   font-size: 20px;
-  margin: 120px;
+  margin: 80px;
   &:hover {
     background: #252831;
     border-left: 4px solid #946b2d;
