@@ -1,6 +1,7 @@
 {
   "name": "sth-project",
   "version": "0.1.0",
+  "homepage": "https://turczerb.github.io/sth-project",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.3.1",
     "components": "^0.1.0",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
@@ -16,13 +18,16 @@
     "react-scripts": "5.0.1",
     "styled": "^1.0.0",
     "styled-components": "^6.0.7",
+    "use-sound": "^4.0.1",
     "web-vitals": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

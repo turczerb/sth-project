@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import useSound from "use-sound";
+import boopSfx from "../sounds/boop.mp3.mp3";
+
 //Students, staff etc a menu tartalmát designolja. tehát ez maga az 1 db felirat mint pl Spell
 const SidebarLink = styled(Link)`
   display: flex;
@@ -44,6 +47,7 @@ const SidebarLabel = styled.span`
 const SubMenu = ({ item }) => {
   //miért kell curly{} az itemnek?? destructuring miatt
   const [showSubNav, setShowSubNav] = useState(false); //ez az h most az almenu nyitva v sem alapbol zárva
+  const [play, { stop }] = useSound(boopSfx);
 
   const showSubnav = () => {
     setShowSubNav(!showSubNav);
@@ -51,7 +55,12 @@ const SubMenu = ({ item }) => {
 
   return (
     <>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+      <SidebarLink
+        onMouseEnter={play}
+        onMouseLeave={stop}
+        to={item.path}
+        onClick={item.subNav && showSubnav}
+      >
         <div>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
