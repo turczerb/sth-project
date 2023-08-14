@@ -12,7 +12,7 @@ const Sidi = styled.div`
   background: #15171c;
   height: 80px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -59,6 +59,7 @@ const SideBar = () => {
         <NavIcon to="#">
           <FaIcons.FaBars onClick={showSidebar} />
         </NavIcon>
+
         <NavBar></NavBar>
       </Sidi>
       <SidebarNav sidebar={sidebar}>

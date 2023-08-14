@@ -15,7 +15,7 @@ export const NavBarData = [
     path: "/movies",
   },
   {
-    title: " Houses",
+    title: "Houses",
     path: "/houses",
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
