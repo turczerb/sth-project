@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <div>
       <SideBar />
-      <NavBar />
     </div>
   );
 };

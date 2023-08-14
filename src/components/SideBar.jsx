@@ -5,6 +5,8 @@ import { SideBarData } from "./SideBarData";
 import * as FaIcons from "react-icons/fa"; //hát ez a react-icons loszar
 import * as AiIcons from "react-icons/ai";
 import SubMenu from "./SubMenu";
+import NavBar from "./Bar/NavBar";
+
 //ez a feketecsik fenn
 const Sidi = styled.div`
   background: #15171c;
@@ -56,7 +58,7 @@ const SideBar = () => {
         <NavIcon to="#">
           <FaIcons.FaBars onClick={showSidebar} />
         </NavIcon>
-        leves
+        <NavBar></NavBar>
       </Sidi>
       <SidebarNav sidebar={sidebar}>
         <SidebarWrap>
