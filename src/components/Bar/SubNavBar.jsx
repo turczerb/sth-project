@@ -10,10 +10,9 @@ const Element = styled(Link)`
   padding: 15px 20px 10px 20px;
   font-size: 20px;
   margin: 120px;
-
   &:hover {
     background: #252831;
-    border-bottom: 4px solid #946b2d;
+    border-left: 4px solid #946b2d;
     font-weight: bold;
   }
 `;
@@ -29,7 +28,7 @@ const SubNavBar = ({ mokus }) => {
   return (
     <>
       <Element to={mokus.path} onClick={mokus.subNav && showSubNav}>
-        {mokus.title}
+        <span>{mokus.title}</span>
         <SubElement></SubElement>
       </Element>
     </>

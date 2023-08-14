@@ -59,8 +59,7 @@ const SideBar = () => {
         <NavIcon to="#">
           <FaIcons.FaBars onClick={showSidebar} />
         </NavIcon>
-
-        <NavBar></NavBar>
+        <NavBar props={sidebar}></NavBar>
       </Sidi>
       <SidebarNav sidebar={sidebar}>
         <SidebarWrap>
