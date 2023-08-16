@@ -9,6 +9,8 @@ const Hir = styled.div`
   column-gap: 5px;
   place-items: center;
   row-gap: 10px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 `;
 
 const TopNewCard = () => {

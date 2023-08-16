@@ -15,6 +15,8 @@ const Sidi = styled.div`
   grid-template-columns: 1fr 20fr;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
 `;
 
 //ez a kis hamburger icon
