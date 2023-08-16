@@ -3,6 +3,7 @@ import NavBar from "./Bar/NavBar";
 import TopNewCard from "./TopNewCard";
 import SideBar from "./SideBar";
 import { SideBarData } from "./SideBarData";
+import Main from "./Main";
 
 const Home = () => {
   console.log(SideBarData);
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <SideBar />
+      <Main />
     </div>
   );
 };

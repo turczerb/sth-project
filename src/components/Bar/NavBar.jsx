@@ -4,8 +4,12 @@ import { NavBarData } from "./NavBarData";
 import SubNavBar from "./SubNavBar";
 
 const Navi = styled.nav`
-  justify-content: center;
-  width: ${({ sidebar }) => (sidebar ? "100px" : "1024px")};
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  //width: ${({ sidebar }) => (sidebar ? "1000px" : "100%")};
 `;
 
 const Div = styled.div`

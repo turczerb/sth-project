@@ -10,9 +10,9 @@ import NavBar from "./Bar/NavBar";
 //ez a feketecsik fenn
 const Sidi = styled.div`
   background: #15171c;
-  height: 80px;
+  //height: 80px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 20fr;
   justify-content: space-between;
   align-items: center;
 `;
@@ -22,7 +22,7 @@ const NavIcon = styled(Link)`
   margin-left: 2rem;
   color: #946b2d;
   font-size: 2 rem;
-  height: 80px;
+  //height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -32,14 +32,14 @@ const NavIcon = styled(Link)`
 const SidebarNav = styled.nav`
   background: #15171c;
   width: 280px;
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
-  z-index: 10;
+  z-index: -1;
 `;
 
 //ez meg egy div ami magába tartalmazza konténerként az egyes elemeket: students, staff etc

@@ -5,8 +5,8 @@ import styled from "styled-components"; //stiluska
 const Hir = styled.div`
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
   place-items: center;
   row-gap: 10px;
 `;
