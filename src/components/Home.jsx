@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <SideBar />
-      <Main />
+      <Main></Main>
     </div>
   );
 };

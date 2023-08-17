@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import Book from "./Book";
 
-const BookCard = (props) => {
+const BookCardStylo = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 40px;
+  margin: 10px;
+`;
+
+const BookCard = () => {
   //itt kell a fetch és ő adja le props-ba a datát a book.jsx-nek fetch: useeffect and usestate
   const [data, setData] = useState({ results: [] });
 
@@ -11,12 +20,11 @@ const BookCard = (props) => {
     )
       .then((response) => response.json())
       .then((data) => setData(data));
-    console.log(data);
-    console.log("konyv data");
+    console.log("saláta");
   }, []);
 
   return (
-    <div>
+    <BookCardStylo>
       {data.results.map((book, index) => {
         return (
           <Book
@@ -27,7 +35,7 @@ const BookCard = (props) => {
           />
         );
       })}
-    </div>
+    </BookCardStylo>
   );
 };
 
